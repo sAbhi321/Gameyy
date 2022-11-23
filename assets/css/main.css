@@ -1,0 +1,608 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
+
+/*
+---------------------------------------------
+Global Styles
+---------------------------------------------
+*/
+html,
+body {
+  background: #1f2122;
+  font-family: 'Poppins', sans-serif;
+}
+body .page-content {
+  margin-top: ;
+  background-color: #27292a;
+  padding: 60px;
+  border-radius: 23px;
+}
+.feFont {
+ color: white;
+}
+.down-content {
+  color: gray;
+}
+.contentCtr{
+  justify-content: center;
+  align-items: center;
+  float: right;
+  border-radius: 23px;
+  margin: auto;
+}
+.feImg{
+  /* position: relative; */
+  border-radius: 23px;
+  width: 100%;
+
+}
+p {
+  font-size: 15px;
+  color: #666;
+  line-height: 30px;
+  margin-bottom: 0px;
+}
+
+.logo{
+  border-right: 1px solid #27292a;
+  height: 50px;
+  border-radius: 16px;
+  flex-basis: 25%;
+  margin-right: 5%;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+/* buttons */
+.homeButton{
+  color: #ec6090;
+  text-align: center;
+  margin: 4px 6px;
+  background: transparent;
+  border-radius: 16px;
+}
+.homeButton:hover{
+  background: white;
+
+  color: black;
+  -webkit-transition: all 0.1s ease 0.2s;
+}
+
+.transimg{
+
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.transimg:hover{
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.glow-on-hover {
+    width: 90px;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: white;
+    background: #27292a;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 16px;
+    margin: 3px 3px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #27292a;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+  }
+
+
+.box {
+  position: relative;
+  margin: auto;
+  width: 70%;
+  /* align-items: center; */
+  border: 3px;
+  padding: 5rem;
+  display: flex;
+  border-radius: 23px;
+  background-color: #27292a;
+  justify-content: center;
+}
+
+.box2 {
+  position: relative;
+  padding: 50px 60px;
+}
+.box3 {
+  position: relative;
+  margin-top: 0px;
+  align-items: center;
+  display: flex;
+}
+
+.main-button a:hover {
+  background-color: #fff;
+  color: #e75e8d;
+}
+
+section {
+  margin-top: 120px;
+}
+
+.heading-section h4 {
+  color: #ec6090;
+  font-size: 34px;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+.heading-section h4 em {
+  color: #fff;
+  font-style: normal;
+  text-decoration: underline;
+}
+
+.main-banner {
+  background-image: url(../images/banner-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  min-height: 380px;
+  border-radius: 23px;
+  padding: 80px 60px;
+}
+
+.main-banner h6 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.main-banner h4 {
+  font-size: 45px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.main-banner h4 em {
+  font-style: normal;
+  color: #ec6090;
+}
+
+.main-button a {
+  font-size: 14px;
+  color: #fff;
+  background-color: #e75e8d;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-button a:hover {
+  background-color: #fff;
+  color: #e75e8d;
+}
+
+.most-popular {
+  margin-top: 80px;
+  padding: 30px;
+  background-color: #1f2122;
+  border-radius: 23px;
+}
+
+.most-popular .item {
+  background-color: #27292a;
+  padding: 30px 15px;
+  border-radius: 23px;
+  margin-bottom: 30px;
+}
+
+.most-popular .item .item {
+  padding: 0px;
+  border-radius: 23px;
+  background-color: transparent;
+  margin-bottom: 0px;
+}
+
+.most-popular .item img {
+
+  padding: 0px;
+  height: 8rem;
+  width: 90%;
+  border-radius: 23px;
+  margin: auto;
+  margin-bottom: 0px;
+}
+
+.most-popular .item h4 {
+  color: #ec6090;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  display: inline-block;
+}
+
+.most-popular .item span {
+  color: #666;
+  display: block;
+  margin-top: 7px;
+  font-weight: 400;
+}
+
+.most-popular .item ul {
+  float: right;
+  margin-top: 20px;
+}
+
+.most-popular .item ul li {
+
+  color: #fff;
+  font-size: 14px;
+}
+
+.most-popular .item ul li:first-child i {
+  color: yellow;
+}
+
+.most-popular .item ul li:last-child i {
+  color: #ec6090;
+}
+
+.most-popular .main-button {
+  text-align: center;
+  margin-bottom: -53px;
+}
+
+footer p {
+  text-align: center;
+  padding: 30px 0px;
+  color: #fff;
+  font-weight: 300;
+}
+
+footer p a {
+  color: #fff;
+  transition: all .3s;
+}
+
+footer p a:hover {
+  color: #ec6090;
+}
+/*
+---------------------------------------------
+Featured Games Style
+---------------------------------------------
+*/
+
+.featured-games {
+  border-radius: 23px;
+  background-color: #1f2122;
+  padding: 30px;
+}
+
+.featured-games .item .thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-games .item .thumb .hover-effect {
+  position: absolute;
+  bottom: -100px;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s;
+}
+
+.featured-games .item .thumb:hover .hover-effect {
+  opacity: 1;
+  visibility: visible;
+  bottom: 15px;
+}
+
+.featured-games .item .thumb .hover-effect h6 {
+  background-color: rgba(31,33,34,0.95);
+  display: inline-block;
+  color: #ec6090;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+/* .featured-games .item img {
+  border-radius: 23px;
+} */
+
+.featured-games .item h4 {
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  display: inline-block;
+}
+
+.featured-games .item span {
+  color: #666;
+  display: block;
+  margin-top: 7px;
+  font-weight: 400;
+}
+
+.featured-games .item ul {
+  float: right;
+  margin-top: 20px;
+}
+
+.featured-games .item ul li {
+  text-align: right;
+  color: #fff;
+  font-size: 14px;
+}
+
+.featured-games .item ul li:first-child i {
+  color: yellow;
+}
+
+.featured-games .item ul li:last-child i {
+  color: #ec6090;
+}
+
+.featured-games .owl-nav {
+  position: absolute;
+  margin: 0 auto;
+  top: -70px;
+  right: 0;
+}
+
+.featured-games .owl-nav .owl-prev {
+  margin-right: 2.5px;
+}
+
+.featured-games .owl-nav .owl-next {
+  margin-left: 2.5px;
+}
+
+.featured-games .owl-nav .owl-prev span,
+.featured-games .owl-nav .owl-next span  {
+  font-size: 36px;
+  display: inline-block;
+  color: #666;
+  opacity: 1;
+  transition: all .3s;
+}
+
+.featured-games .owl-nav .owl-prev span:hover,
+.featured-games .owl-nav .owl-next span:hover {
+  opacity: 1;
+  color: #ec6090;
+}
+.templatemo-item {
+  height: 100px;
+	width: 60%;
+	border-radius: 23px;
+}
+.top-downloaded {
+  border-radius: 23px;
+  background-color: #1f2122;
+  padding: 30px;
+
+}
+
+.top-downloaded ul li {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.top-downloaded ul li img {
+  float: left;
+  margin-right: 15px;
+}
+
+.top-downloaded ul li h4 {
+  font-size: 15px;
+  padding-top: 7px;
+}
+
+.top-downloaded ul li h6 {
+  font-size: 15px;
+  color: #666;
+  font-weight: 400;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.top-downloaded ul li span {
+  color: #fff;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+/* .top-downloaded ul li .download i {
+  position: absolute;
+  right: auto;
+  top: 50%;
+  transform: translateY(-23px);
+  width: 46px;
+  height: 46px;
+  text-align: center;
+  line-height: 46px;
+  color: #ec6090;
+  background-color: #27292a;
+  border-radius: 50%;
+} */
+
+.top-downloaded ul li {
+  border-bottom: 1px solid #27292a;
+  margin-bottom: 28px;
+  padding-bottom: 28px;
+}
+
+.top-downloaded .text-button  {
+  text-align: center;
+}
+
+.top-downloaded .text-button a {
+  font-weight: 600;
+  color: #ec6090;
+  font-size: 15px;
+}
+/*
+---------------------------------------------
+Live Stream Style
+---------------------------------------------
+*/
+
+.live-stream {
+  margin-top: 20px;
+  border-radius: 23px;
+  background-color: #1f2122;
+  padding: 30px;
+}
+
+.live-stream .item {
+  margin-bottom: 30px;
+}
+
+.live-stream .thumb {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.live-stream .thumb img {
+  border-radius: 23px;
+  height: 11rem;
+  width: 16rem;
+}
+
+.live-stream .thumb:hover .hover-effect {
+  opacity: 1;
+  visibility: visible;
+}
+
+.live-stream .hover-effect {
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s;
+}
+
+.live-stream .hover-effect .live a {
+  position: absolute;
+  background-color: rgba(236, 96, 144, 0.9);
+  padding: 5px 10px;
+  border-radius: 23px;
+  color: #fff;
+  font-size: 14px;
+  right: 15px;
+  top: 15px;
+}
+
+.live-stream .hover-effect ul {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.live-stream .hover-effect ul li {
+  display: inline-block;
+  margin: 0px 5px;
+}
+
+.live-stream .hover-effect ul li a {
+  background-color: rgba(236, 96, 144, 0.9);
+  padding: 5px 10px;
+  border-radius: 23px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.live-stream .avatar img {
+  margin-right: 15px;
+}
+
+.live-stream span i {
+  color: #fff;
+  background-color: #ec6090;
+  border-radius: 50%;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 3px;
+}
+
+.live-stream span {
+  font-size: 14px;
+  color: #ec6090;
+}
+
+.live-stream .down-content h4 {
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 61px;
+}
+
+.live-stream .main-button {
+  text-align: center;
+  margin-bottom: -53px;
+}
